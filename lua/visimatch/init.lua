@@ -2,7 +2,8 @@ local M = {}
 
 ---@class VisimatchConfig
 ---
----The highlight group to apply to matched text; defaults to `Search`.
+---The highlight group to apply to matched text; defaults to
+---`LspReferenceTarget`.
 ---@field hl_group? string
 ---
 ---The minimum number of selected characters required to trigger highlighting;
@@ -33,7 +34,7 @@ local M = {}
 
 ---@type VisimatchConfig
 local config = {
-    hl_group = "Search",
+    hl_group = "LspReferenceTarget",
     chars_lower_limit = 6,
     lines_upper_limit = 30,
     strict_spacing = false,
